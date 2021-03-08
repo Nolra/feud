@@ -1,5 +1,5 @@
 function MenuList() {
-  return (
+  return ( 
   	<ul>
   		<li>Начать</li>
   		<li>Продолжить</li>
