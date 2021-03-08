@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/feud-gh/static/css/main.65c0e7d1.chunk.css",
+    "main.js": "/feud-gh/static/js/main.4eb70d8c.chunk.js",
+    "main.js.map": "/feud-gh/static/js/main.4eb70d8c.chunk.js.map",
+    "runtime-main.js": "/feud-gh/static/js/runtime-main.a21f1d84.js",
+    "runtime-main.js.map": "/feud-gh/static/js/runtime-main.a21f1d84.js.map",
+    "static/js/2.ce916bed.chunk.js": "/feud-gh/static/js/2.ce916bed.chunk.js",
+    "static/js/2.ce916bed.chunk.js.map": "/feud-gh/static/js/2.ce916bed.chunk.js.map",
+    "index.html": "/feud-gh/index.html",
+    "static/css/main.65c0e7d1.chunk.css.map": "/feud-gh/static/css/main.65c0e7d1.chunk.css.map",
+    "static/js/2.ce916bed.chunk.js.LICENSE.txt": "/feud-gh/static/js/2.ce916bed.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/feud-gh/static/media/Fortuna.d3671896.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a21f1d84.js",
+    "static/js/2.ce916bed.chunk.js",
+    "static/css/main.65c0e7d1.chunk.css",
+    "static/js/main.4eb70d8c.chunk.js"
+  ]
+}
