@@ -1,0 +1,88 @@
+/* Login Screen */
+.login {
+	background: #272424;
+	height: 100vh;
+}
+.login .title {
+	font-size: 96px;
+	line-height: 125px;
+	letter-spacing: 0.12em;
+	padding: 80px 0;
+	margin: 0;
+	color: #fff
+}
+.come-in {
+	width: 160px;
+	height: 30px;
+	line-height: 31px;
+	margin: auto;
+	background: rgba(196, 196, 196, 0.1);
+	cursor: pointer;
+}
+.divider {
+	max-width: 320px;
+	margin: 30px auto 40px;
+	opacity: 0.66;
+	border-bottom: 3px solid #fff;
+}
+.reg-in {
+	cursor: pointer;
+}
+.reg-in span {
+	width: 38px;
+	height: 38px;
+	margin: 0 0 -10px 15px;
+	border-radius: 100%;
+	background-color: rgba(196, 196, 196, 0.1);
+	background-image: url("../../src/icons/chevron.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+.reg-in-social {
+	width: 115px;
+	margin: auto;
+	padding: 20px 0; 
+	text-align-last: justify;
+}
+.reg-in-social a {
+	background-image: url("../../src/icons/social.png");
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.fb {
+	background-position: left;
+}
+.vk {
+	background-position: center;
+	margin: 0 12px;
+}
+.google {
+	background-position: right;
+}
+/* Login Form */
+.login-form .row {
+	margin-bottom: 30px;
+}
+.login-form input {
+	width: 238px;
+	height: 33px;
+	background-color: rgba(196, 196, 196, 0.2);
+	border-radius: 11px;
+	display: block;
+	margin: auto;
+	padding: 0 10px;
+	color: #fff;
+}
+.login-form label {
+	display: block;
+	text-align: center;
+	letter-spacing: 0.12em;
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
