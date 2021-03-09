@@ -1,7 +1,9 @@
 /* Login Screen */
 .login {
 	background: #272424;
-	height: 100vh;
+	min-height: 100%;
+	width: 100%;
+  position: absolute;
 }
 .login .title {
 	font-size: 96px;

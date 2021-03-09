@@ -1,4 +1,4 @@
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, form, label, input, input:focus {
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, form, label, input, input:focus, li, ul, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,6 +6,8 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, form, label, input, in
 	font: inherit;
 	vertical-align: baseline;
 	outline: none;
+	list-style: none;
+	box-sizing: border-box;
 }
 
 @font-face {
@@ -31,4 +33,18 @@ body {
 	font-size: 19px;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
+	border: none;
+	outline: none;
+}
+.back-button {
+	background: url("./images/icons/arrow.png") no-repeat center;
+	width: 78px;
+	height: 78px;
+	border: none;
+	transform: rotate(180deg);
+	padding:0;
+	display: block;
+	position: absolute;
+	right: 25px;
+  bottom: 15px;
 }

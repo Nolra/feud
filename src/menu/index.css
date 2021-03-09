@@ -1,0 +1,36 @@
+.menu {
+	background: #272424;
+	height: 100%;
+	width: 100%;
+  position: absolute;
+	padding-bottom: 100px;
+}
+.menu h1 {
+	font-family: Fortuna;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 62px;
+	letter-spacing: 0.12em;
+	color: #fff;
+	text-align: center;
+	padding: 80px 0 50px;
+}
+.menu ul {
+	width: 240px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.menu .button {
+	width: 100%;
+	height: 45px;
+	background: rgba(196, 196, 196, 0.2);
+	border-radius: 11px;
+	font-size: 18px;
+	line-height: 45px;
+	letter-spacing: 0.11em;
+	margin-top: 30px;
+}
+.menu .button:disabled {
+	opacity: 0.2;
+	background: #3D3D3D;
+}

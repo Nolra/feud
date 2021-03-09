@@ -1,24 +1,29 @@
 import './index.css';
 import { useState } from 'react';
 
-function Login() {
-  const [login, useLogin] = useState(false);
+function Login(props) {
+  const [login, setLogin] = useState(false);
 
-  function HandleLogin() {
-    useLogin(true);
+  function onLogin() {
+    setLogin(true);
   }
+
+  function onEnter() {
+    props.setEnter("Menu");
+  }
+
 
   let screen;
   if (!login) {
     screen = 
       <div className="login-action">
-        <div className="come-in button" onClick={HandleLogin}>Войти</div>
+        <div className="come-in button" onClick={onLogin}>Войти</div>
         <div className="divider"></div>
-        <div className="reg-in button" onClick={HandleLogin}>Регистрация<span></span></div>
+        <div className="reg-in button" onClick={onLogin}>Регистрация<span></span></div>
         <div className="reg-in-social">
-          <a className="fb" onClick={HandleLogin}></a>
-          <a className="vk" onClick={HandleLogin}></a>  
-          <a className="google" onClick={HandleLogin}></a>  
+          <a className="fb" onClick={onLogin}></a>
+          <a className="vk" onClick={onLogin}></a>  
+          <a className="google" onClick={onLogin}></a>  
         </div>
       </div>
   } else {
@@ -31,6 +36,9 @@ function Login() {
         <div className="row">
           <label htmlFor="password">Пароль</label>
           <input type="text" id="password" name="password"/>
+        </div>
+        <div className="row">
+          <div className="come-in button" onClick={onEnter}>Войти</div>
         </div>
       </form>
   }

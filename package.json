@@ -1,6 +1,6 @@
 {
   "name": "feud-game",
-  "homepage": "https://nolra.github.io/feud/index.html",
+  "homepage": "https://nolra.github.io/feud",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
