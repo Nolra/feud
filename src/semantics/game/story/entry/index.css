@@ -1,0 +1,16 @@
+.entry {
+  text-align: center;
+  padding-top: 30px;
+}
+.entry img {
+  max-width: 100%;
+}
+.entry h1 {
+	padding-top: 30px;
+	font-family: Fortuna;
+	font-weight: normal;
+	font-size: 41px;
+	line-height: 53px;
+	letter-spacing: 0.12em;
+	color: #3A3A3A;
+}

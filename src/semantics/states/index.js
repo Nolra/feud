@@ -1,39 +1,58 @@
 import './index.css';
+import Modal from '../../ui/modal/index.js'
+
 import { useState } from 'react';
 
 function States(props) {
 
   const [stateСhoice, setStateСhoice] = useState("");
+  const [modal, setModal] = useState({show: false, src: "", alt: ""});
 
- 	function onChoice(choice) {
- 		setStateСhoice(choice)
- 		console.log(choice)
- 	}
+ 	function onChoice(choice) {setStateСhoice(choice)}
+  function toGo(value) {props.setEnter(value)}
 
-  function toGo(value) {
-		props.setEnter(value)
+  function onModal(event) {
+		setModal({
+	  	show: true,
+	  	src: event.target.src,
+	  	alt: event.target.alt
+  	});
 	}
-
-
-
-
 
  	// ЗАГЛУШКА
  	const data = {
- 		globalStates : ["bag.png", "bumm.png", "vine.png"],
- 		localStates : ["bat.png","candle.png","dagger.png", "map.png", "hammer.png"]
+ 		globalStates : [
+	 		{src: "bag", alt: "Мешок"},
+	 		{src: "vine", alt: "Лоза"},
+	 		{src: "bumm", alt: "Бумм!"}
+ 		],
+ 		localStates : [
+	 		{src: "bat", alt: "Летучая мышь"},
+	 		{src: "candle", alt: "Огарок свечи"},
+	 		{src: "dagger", alt: "Кинжал"},
+	 		{src: "map", alt: "Карты"},
+	 		{src: "hammer", alt: "Молоток"}
+	 	]
  	}
-
-
 
 
 
 	const listGlobal = data.globalStates.map( (name, index) =>
-	  <img src={require(`../images/globalStates/${name}`).default} key={index} />
+	  <img 
+		  src={require(`../../images/globalStates/${name.src}.png`).default} 
+		  key={index} 
+		  alt={name.alt} 
+		  onClick={(event) => onModal(event)} 
+	  />
 	)
 
 	const listLocal = data.localStates.map( (name, index) => 
-	   <img src={require(`../images/localStates/${name}`).default} key={index} />
+	   <img 
+		   src={require(`../../images/localStates/${name.src}.png`).default} 
+		   key={index} 
+		   alt={name.alt}
+		   onClick={(event) => onModal(event)} 
+	   />
 	)
 
 	// state navigation
@@ -66,6 +85,7 @@ function States(props) {
   return (
     <div className="states">
     	{screen}
+    	<Modal modal={modal} setModal={setModal }/>
     </div>
   );
 }

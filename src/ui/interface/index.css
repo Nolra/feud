@@ -1,0 +1,33 @@
+.interface {
+  height: 80px;
+  padding: 0 30px;
+}
+.dark {
+  background: #000;
+}
+.karma {
+	width: 60px;
+	height: 80px;
+	background: url("../../images/icons/karma.png") no-repeat center;
+}
+.inventory {
+	width: 60px;
+	height: 80px;
+	background: url("../../images/icons/inventory.png") no-repeat center top 20px;
+	float: right;
+}
+.settings {
+	width: 45px;
+	height: 80px;	
+	background: url("../../images/icons/settings.png") no-repeat center top 32px;
+	float: right;
+}
+.light .karma {
+	background: url("../../images/icons/karma-light.png") no-repeat center;
+}
+.light .inventory {
+	background: url("../../images/icons/inventory-light.png") no-repeat center top 20px;
+}
+.light .settings {
+	background: url("../../images/icons/settings-light.png") no-repeat center top 32px;
+}

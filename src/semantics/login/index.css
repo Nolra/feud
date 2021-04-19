@@ -6,11 +6,28 @@
   position: relative;
   overflow:hidden;
 }
+
+.login p {
+	padding: 100px 40px;
+	color: #fff;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 34px;
+	letter-spacing: 0.01em;
+}
+
+.login p span {
+	font-family: Fortuna;
+	font-size: 30px;
+}
+
 .login .title {
 	font-size: 96px;
 	line-height: 125px;
 	letter-spacing: 0.12em;
-	padding: 80px 0;
+	padding: 40px 0;
 	margin: 0;
 	color: #fff
 }
@@ -37,7 +54,7 @@
 	margin: 0 0 -10px 15px;
 	border-radius: 100%;
 	background-color: rgba(196, 196, 196, 0.1);
-	background-image: url("../../src/icons/chevron.png");
+	background-image: url("../../../src/images/icons/chevron.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	display: inline-block;
@@ -49,7 +66,7 @@
 	text-align-last: justify;
 }
 .reg-in-social a {
-	background-image: url("../../src/icons/social.png");
+	background-image: url("../../../src/images/icons/social.png");
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -68,6 +85,9 @@
 .login-form .row {
 	margin-bottom: 30px;
 }
+.login-form .row:last-child {
+	margin-top: 40px;
+}
 .login-form input {
 	width: 238px;
 	height: 33px;
@@ -77,6 +97,12 @@
 	margin: auto;
 	padding: 0 10px;
 	color: #fff;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.11em;
 }
 .login-form label {
 	display: block;
